@@ -31,6 +31,10 @@ header {
         height: 30px;
         border-radius: 20px;
         background: $gradient;
+        &:hover {
+            transition: background 300ms ease-in-out;
+            background: linear-gradient(90deg, lighten(hsl(236, 72%, 79%), 10) 0%, lighten(hsl(237, 63%, 64%), 10) 100%);
+        }
     }
     div#toggle_button_circle {
         width: 22px;
@@ -54,13 +58,13 @@ section {
         }
         p {
             font-size: $font-size;
-            padding: 18px;
-            border-bottom: 1px lighten($light-grayish-blue, 15) solid;
+            padding: 15px;
+            border-bottom: 1px lighten($light-grayish-blue, 5) solid;
         }
         &_price {
-            padding: 20px 0;
+            padding: 15px 0 20px 0;
             color: $dark-grayish-blue;
-            border-bottom: 1px lighten($light-grayish-blue, 15) solid;
+            border-bottom: 1px lighten($light-grayish-blue, 5) solid;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -72,6 +76,7 @@ section {
             }
             span {
                 font-size: 2.5rem;
+                margin-right: 5px;
             }
         }
         a {
@@ -79,21 +84,36 @@ section {
             padding: 14px;
             margin: 32px auto 0 auto;
             border-radius: 5px;
-            color: white;
             font-size: 0.9rem;
-            background: $gradient;
             text-transform: uppercase;
+            background: $gradient;
+            border: white 1px solid;
+            color: white;
+            &:hover {
+                transition: all 200ms ease-in-out;
+                background: white;
+                border: $violet 1px solid;
+                color: $violet;
+            }
         }
     }
     .card:nth-child(2) {
         background: $gradient;
         color: white;
-        h3 {
+        h3, span {
             color: white;
         }
         a {
             background: white;
-            color: hsl(237, 63%, 64%);
+            color: $violet;
+            border: $gradient 1px solid;
+
+            &:hover {
+                transition: all 200ms ease-in-out;
+                background: $gradient;
+                border: white 1px solid;
+                color: white;
+            }
         }
     }
 }

@@ -3,14 +3,14 @@ $very-light-grayish-blue: hsl(240, 78%, 98%);
 $light-grayish-blue: hsl(234, 14%, 74%);
 $grayish-blue: hsl(233, 13%, 49%);
 $dark-grayish-blue: hsl(232, 13%, 33%);
+$violet: hsl(237, 63%, 64%);
 
 $font-size: 15px;
 $font-weight: 700;
 
-$breaking-point: 1000px;
+$breaking-point: 1050px;
 @mixin mQ ($width) {
     @media screen and (min-width: $width) {
         @content;        
     }
 }
-

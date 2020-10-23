@@ -8,9 +8,32 @@ body {
 }
 
 #main-wrapper {
-    width: 70%;
-    margin: 80px auto 80px auto;
+    width: 990px;
+    margin: 80px auto;
 }
-    
+
+header {
+    width: 330px;
+    margin: auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    .card {
+        box-shadow: 0px 10px 30px -10px darken($very-light-grayish-blue, 5);
+        
+        &:nth-child(2) {
+            h2 {
+                padding-top: 22px;
+            }
+            a {
+                margin-bottom: 22px;
+            }
+        }
+    }
+}
+
 }
 
