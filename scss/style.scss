@@ -3,4 +3,10 @@
 @import "_base.scss";
 @import "_desktop.scss";
 
+.hidden {
+    display: none;
+}
 
+.go-right {
+    transform: translateX(24px);
+}
