@@ -1,0 +1,16 @@
+@include mQ ($breaking-point) {
+
+body {
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right, bottom left;
+}
+
+#main-wrapper {
+    width: 70%;
+    margin: 80px auto 80px auto;
+}
+    
+}
+

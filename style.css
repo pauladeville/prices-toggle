@@ -1,0 +1,128 @@
+body {
+  background-image: url("../images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: 200px -40px;
+  background-attachment: fixed;
+}
+
+#main-wrapper {
+  width: 330px;
+  margin: 65px auto 100px auto;
+}
+
+section .card {
+  margin-bottom: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 700;
+  background-color: #f6f6fe;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+  color: #6d708d;
+}
+header div#toggle {
+  margin: 40px 0 90px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+header div#toggle p {
+  font-size: 15px;
+  color: #b3b5c6;
+}
+header div#toggle_button {
+  width: 54px;
+  height: 30px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+}
+header div#toggle_button_circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  background-color: #f6f6fe;
+  margin: 4px;
+}
+
+section .card {
+  background-color: white;
+  padding: 30px;
+  color: #6d708d;
+  text-align: center;
+  border-radius: 10px;
+}
+section .card h2 {
+  font-size: 1.2rem;
+}
+section .card p {
+  font-size: 15px;
+  padding: 18px;
+  border-bottom: 1px #dfe0e7 solid;
+}
+section .card_price {
+  padding: 20px 0;
+  color: #494c5f;
+  border-bottom: 1px #dfe0e7 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .card_price_num {
+  font-size: 4.5rem;
+}
+section .card_price_num--monthly {
+  display: none;
+}
+section .card_price span {
+  font-size: 2.5rem;
+}
+section .card a {
+  display: block;
+  padding: 14px;
+  margin: 32px auto 0 auto;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  text-transform: uppercase;
+}
+section .card:nth-child(2) {
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  color: white;
+}
+section .card:nth-child(2) h3 {
+  color: white;
+}
+section .card:nth-child(2) a {
+  background: white;
+  color: #696fdd;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right, bottom left;
+  }
+
+  #main-wrapper {
+    width: 70%;
+    margin: 80px auto 80px auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
